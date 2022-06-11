@@ -18,7 +18,7 @@ export default {
 <style lang="scss" scoped>
 .loading-effect {
   background: $black;
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom:0;
   left:0;

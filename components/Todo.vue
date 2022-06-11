@@ -78,7 +78,7 @@ export default {
 <style lang="scss" scoped>
 .todo {
   width: 80%;
-  min-height: 70rem;
+  min-height: 90vh;
   height: auto;
   background: $white;
   margin: 0 auto;
