@@ -34,6 +34,9 @@ export default {
 <style lang="scss" scoped>
 .todoList {
   background: $main-background;
+  min-height:100vh;
+  height:auto;
+  overflow-x:hidden;
   .main-box {
     margin-top: 5.5rem;
     padding-top: 1.6rem;

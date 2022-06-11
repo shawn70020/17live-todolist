@@ -45,6 +45,7 @@ export default {
       if (this.checked) {
         this.$emit("delItem", this.listId);
       }
+      this.checked = false;
     },
   },
   mounted() {},

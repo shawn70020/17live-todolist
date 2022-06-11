@@ -16,7 +16,7 @@ const addTodo = async ({ state, dispatch, commit }, data) => {
     setTimeout(() => {
         commit("ADD_ITEM", data);
         Vue.prototype.$myLoading.hide()
-    }, 1200);
+    }, 0);
 }
 
 const delItem = async ({ state, dispatch, commit }, data) => {

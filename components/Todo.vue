@@ -6,7 +6,7 @@
         v-for="(item, index) in todoList"
         :item="item"
         :listId="index"
-        :key="index"
+        :key="'list' + index"
         @delItem="delItem"
       />
     </div>
@@ -78,7 +78,7 @@ export default {
 <style lang="scss" scoped>
 .todo {
   width: 80%;
-  min-height: 71.8rem;
+  min-height: 70rem;
   height: auto;
   background: $white;
   margin: 0 auto;
