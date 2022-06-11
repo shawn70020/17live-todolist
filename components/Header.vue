@@ -1,0 +1,62 @@
+<template>
+  <div class="header">
+    <div class="hamburger-icon"></div>
+    <h1>{{ $t("title") }}</h1>
+    <lang-switch class="select-lang" />
+    <svg
+      width="32"
+      height="26"
+      viewBox="0 0 32 26"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      class="arrow-icon"
+    >
+      <path
+        d="M31.0625 14.0625L20.5625 24.5625C19.625 25.5 18 24.8437 18 23.5V17.5H9.5C8.66875 17.5 8 16.8312 8 16V9.99998C8 9.16873 8.66875 8.49998 9.5 8.49998H18V2.49999C18 1.16249 19.6188 0.499987 20.5625 1.43749L31.0625 11.9375C31.6438 12.525 31.6438 13.475 31.0625 14.0625ZM12 24.25V21.75C12 21.3375 11.6625 21 11.25 21H6C4.89375 21 4 20.1062 4 19V6.99998C4 5.89373 4.89375 4.99999 6 4.99999H11.25C11.6625 4.99999 12 4.66249 12 4.24999V1.74999C12 1.33749 11.6625 0.999987 11.25 0.999987H6C2.6875 0.999987 0 3.68749 0 6.99998V19C0 22.3125 2.6875 25 6 25H11.25C11.6625 25 12 24.6625 12 24.25Z"
+        fill="white"
+      />
+    </svg>
+  </div>
+</template>
+
+<style lang="scss" scoped>
+.header {
+  width: 100vw;
+  height: 5.5rem;
+  background: $primary-color;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  @include flex-aic;
+  .hamburger-icon {
+    @include white-bar;
+    position: relative;
+    margin-left:1rem;
+    &::before {
+      content: "";
+      position: absolute;
+      @include white-bar;
+      top: 1rem;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      @include white-bar;
+      bottom: 1rem;
+    }
+  }
+  h1 {
+    color: $white;
+    font-size: 3.6rem;
+    font-weight: 400;
+    flex-grow: 1;
+    margin-left: 2.5rem;
+  }
+  .select-lang{
+  margin-right: 2rem;
+  }
+  .arrow-icon {
+    margin-right: 1.15rem;
+  }
+}
+</style>

@@ -1,0 +1,5 @@
+export const GET_TODO_INFO = 'GET_TODO_INFO'
+export const SET_TODO_INFO = 'SET_TODO_INFO'
+export const ADD_ITEM = 'ADD_ITEM'
+export const DEL_ITEM = 'DEL_ITEM'
+export const SET_LANG = 'SET_LANG'
