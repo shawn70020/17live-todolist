@@ -44,21 +44,13 @@ export default {
     ...mapState(["todoList"]),
   },
   methods: {
-    async getTodoInfo() {
-      await this.$store.dispatch("getTodoInfo");
-    },
     async checkUser() {
       if (this.userName == "") return;
       await this.$store.dispatch("checkUser", this.userName);
-      this.$emit('close', false);
-    },
-    async delItem(id) {
-      await this.$store.dispatch("delItem", id);
+      this.$emit("close", false);
     },
   },
-  mounted() {
-    this.getTodoInfo();
-  },
+  mounted() {},
 };
 </script>
 <style lang="scss" scoped>
@@ -74,6 +66,7 @@ export default {
     opacity: 0.15;
     z-index: 999;
   }
+
   .popbox-group {
     width: 35%;
     position: absolute;
@@ -111,6 +104,14 @@ export default {
         padding: 0.75rem;
         margin-left: 2.5rem;
         cursor: pointer;
+      }
+    }
+  }
+  @media screen and (max-width: 415px) {
+    .popbox-group {
+      width: 90%;
+      h2 {
+        font-size: 2.5rem;
       }
     }
   }

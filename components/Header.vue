@@ -50,6 +50,7 @@
     font-size: 3.6rem;
     font-weight: 400;
     flex-grow: 1;
+    flex-shrink: 0;
     margin-left: 2.5rem;
   }
   .select-lang {
