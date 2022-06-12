@@ -26,12 +26,12 @@
   background: $primary-color;
   position: fixed;
   top: 0;
-  z-index: 999;
+  z-index: 1000;
   @include flex-aic;
   .hamburger-icon {
     @include white-bar;
     position: relative;
-    margin-left:1rem;
+    margin-left: 1rem;
     &::before {
       content: "";
       position: absolute;
@@ -52,8 +52,8 @@
     flex-grow: 1;
     margin-left: 2.5rem;
   }
-  .select-lang{
-  margin-right: 2rem;
+  .select-lang {
+    margin-right: 2rem;
   }
   .arrow-icon {
     margin-right: 1.15rem;

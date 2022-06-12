@@ -20,10 +20,11 @@ export default {
   background: $black;
   position: fixed;
   top: 0;
-  bottom:0;
-  left:0;
-  right:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   opacity: 0.15;
+  z-index: 999;
 }
 .loading-icon {
   position: absolute;

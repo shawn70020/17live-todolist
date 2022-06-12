@@ -2,6 +2,8 @@
   "title": "HandsUp",
   "todo": "Todo List",
   "placeholder": "Input Something...",
-  "addtitle": "Add First Item !"
+  "addtitle": "Add First Item !",
+  "poptitle": "Enter New Name Or Former Name",
+  "popPlaceHolder": "Input Name..."
 }
   

@@ -1,9 +1,10 @@
 <template>
   <div class="todo">
+    <Name v-if="showNamePop" @close="showNamePop = false" />
     <h2>{{ $t("todo") }}</h2>
     <div class="item-box" v-if="isTodoBefore">
       <Item
-        v-for="(item, index) in todoList"
+        v-for="(item, index) in currentTodoList"
         :item="item"
         :listId="index"
         :key="'list' + index"
@@ -47,14 +48,14 @@ import { mapState } from "vuex";
 export default {
   data() {
     return {
-      likeLoading: false,
       todoContent: "",
+      showNamePop: true,
     };
   },
   computed: {
-    ...mapState(["todoList"]),
+    ...mapState(["todoList", "currentTodoList"]),
     isTodoBefore() {
-      return this.todoList.length > 0;
+      return this.currentTodoList.length > 0;
     },
   },
   methods: {
